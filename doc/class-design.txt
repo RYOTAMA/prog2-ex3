@@ -1,31 +1,29 @@
 package jp.ac.uryukyu.ie.e165710;
+import java.util.Sacnner;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+//プレイヤーの初期位置と迷路サイズ
+class Point{
+    int s1, s2;
+    int l1, l2;
+    public int Start(int s1,int s2){
+            this.s1 = s1;
+            this.s2 = s2;
+    }
+    public int Size(int l1,int l2){
+        this.s1 = s1;
+        this.s2 = s2;
+    }
+}
 
-public class Ex3_1{
+public class Main{
     public static void main(String[] args){
-	String filename = "/Users/e165710/IdeaProjects/ExampleFileInput/src/main/jp/ac/uryukyu/ie/tnal//map.txt";
-        List<String> strings = new ArrayList<>();
-        Scanner scanner;
+    String input;
+        	Scanner in = new Scanner(System.in);
+        System.out.print("Type some string here : ");
+        	input = in.nextLine();
 
-        try {
-            scanner = new Scanner(new File(filename));
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                strings.add(line);
-            }
-            scanner.close();
-        } catch (FileNotFoundException e) {
-            System.err.println(e.getMessage());
-            System.exit(1);
-        }
-
-        for(String str: strings){
-            System.out.println(str);
-        }
+    String filename = input;
+            List<String> strings = new ArrayList<>();
+            Scanner scanner;
     }
 }
