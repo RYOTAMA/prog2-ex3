@@ -1,21 +1,19 @@
-package jp.ac.uryukyu.ie.e165710;
-import java.util.Sacnner;
 
+import java.io.*;
+import java.util.*;
+
+pubulic class Maze{
 //プレイヤーの初期位置と迷路サイズ
-class Point{
-    int s1, s2;
-    int l1, l2;
-    public int Start(int s1,int s2){
-            this.s1 = s1;
-            this.s2 = s2;
-    }
-    public int Size(int l1,int l2){
-        this.s1 = s1;
-        this.s2 = s2;
-    }
-}
+    int x;
+    int y;
+    int start1=0;
+    int start2=0;
+    int scale1=0;
+    int scale2=0;
+    int goal1=0;
+    int goal2=0;
+    int hosu=a;
 
-public class Main{
     public static void main(String[] args){
     String input;
         	Scanner in = new Scanner(System.in);
